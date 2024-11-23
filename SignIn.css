@@ -1,0 +1,89 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    overflow:hidden;
+}
+.main{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color:antiquewhite;
+
+
+}
+
+.photo{
+    background-image: url("song.png");
+    width: 100vh;
+    height: 100vh;
+    color: antiquewhite;
+
+}
+@media(max-width:745px) {
+    .photo{
+        display: none;
+    }
+}
+.sign{
+    margin-left: 5rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.heading{
+    color: skyblue;
+}
+#email{
+    width: 100vh;
+    border-radius: 0.4rem;
+    height:2rem ;
+}
+
+#password{
+    width: 100vh;
+    border-radius: 0.4rem;
+    height:2rem;
+
+}
+
+.btn{
+    background-color: skyblue;
+    width: 100vh;
+    align-items: center;
+    border-radius: 0.4rem;
+    height:2rem ;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: blue;
+}
+
+.or{
+    text-align: center;
+}
+
+.chanel{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.butn{
+    background-color: white;
+    height: 2.5rem;
+    width: 15rem;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+.butn:hover{
+    cursor: pointer;
+}
+
+.last{
+    text-align: center;
+}
+.last1{
+    text-decoration: none;
+}
+
+.facebook1{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./assets/logo (2).png">
+        <title>BeatBox - Web Player: for Music for everyone</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="SignUp.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="photo">
+                <h1 style="color: white;">Welcome BeatBox</h1>
+                <h2 class="h20">Listen to the top music</h2>
+                <h3 class="h21">FOR FREE</h3>
+            </div>
+            <div class="signup">
+                <h2 class="signuph">Sign Up</h2>
+                <form onsubmit="return Data()" action="SignIn.html">
+                    <div class="name">
+                        <div class="firstname">
+                            <label for="First">First Name</label>
+                            <input type="text" id="First" placeholder="Please Enter Your First Name... " required>
+                        </div>
+                        <div class="lastname">
+                            <label for="Last">Last Name</label>
+                            <input type="text" id="Last" placeholder="Please Enter Your Last Name..." required>
+                        </div>
+                    </div>
+                    <div class="mobile">
+                        <label for="number">Contact Number</label>
+                        <input type="number" id="number" placeholder="Please Enter Your Contact Number...">
+                    </div>
+                    <div class="email">
+                        <label for="email" >Email</label>
+                        <input type="text" id="email" placeholder="Please Enter your e-mail..." >
+                    </div>
+                    <div class="password">
+                        <label for="PassWord">Password</label>
+                        <input type="password" id="PassWord" placeholder="Please Enter Your Password...">
+                    </div>
+                    <div class="password">
+                        <label>Confirm-Password</label>
+                        <input type="password" id="ConfirmPassword" placeholder="Please Re-Enter Your Password...">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="check"> 
+                        <h6>i'hve read and agree with the Term of Service and Privicy Policy</h6>
+                    </div>
+                    
+                    <button class="btn">SignUp</button>
+
+                </form>
+                <p class="or">OR</p>
+                <div class="chanel">
+                    <div class="google">
+                        <button class="butn">Sign up with Google</button>
+                    </div>
+                    <div class="facebook">
+                        <button class="butn">Sign up with Facebook</button>
+                    </div>
+                </div>
+                <P class="last">Already have an account?
+                    <a href="http://127.0.0.1:5500/SignIn.html" class="last1">Sign in</a>
+                </p>
+            </div>
+        </div>
+
+        <script src="SignUp.js"></script>
+    </body>
+</html>

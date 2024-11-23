@@ -1,0 +1,127 @@
+body{
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    overflow:hidden;
+}
+.main{
+    display: flex;
+    background-color:antiquewhite;
+}
+.signuph{
+    color: skyblue;
+}
+
+.photo{
+    background-image: url("song.png");
+    width: 100vh;
+    height: 100vh;
+}
+.h20{
+    color: white;
+}
+.h21{
+    margin-left: 4rem;
+    color: skyblue;
+}
+@media(max-width:745px){
+    .photo{
+        display: none;
+    }
+}
+
+.signup{
+    margin-left: 5rem;
+}
+
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+
+#First{
+    width:100%;
+    height: 1.5rem;
+    border-radius: 0.4rem;
+}
+
+#Last{
+    width:100%;
+    height: 1.5rem;
+    border-radius: 0.4rem;
+}
+.mobile{
+    margin-bottom: 0.7rem;
+}
+#number{
+    width:100%;
+    height: 1.5rem;
+    border-radius: 0.4rem;
+}
+
+.email{
+    margin-bottom: 0.7rem;
+}
+#email{
+    width:100%;
+    height: 1.5rem;
+    border-radius: 0.4rem;
+}
+.password{
+    margin-bottom: 0.7rem;
+}
+#PassWord{
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 0.4rem;
+}
+
+#ConfirmPassword{
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 0.4rem;
+}
+
+.checkbox{
+    display:flex;
+}
+
+.btn{
+    background-color: skyblue;
+    width: 100vh;
+    align-items: center;
+    border-radius: 0.4rem;
+    height:1.5rem ;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: blue;
+}
+
+.or{
+    text-align: center;
+}
+
+.chanel{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.butn{
+    background-color: white;
+    height: 2rem;
+    width: 15rem;
+    border-radius: 1rem;
+}
+.butn:hover{
+    cursor: pointer;
+}
+
+.last{
+    text-align: center;
+}
+.last1{
+    text-decoration: none;
+}
