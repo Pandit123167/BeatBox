@@ -156,7 +156,7 @@ let download_music = document.getElementById('download_music');
 let title = document.getElementById('title');
 Array.from(document.getElementsByClassName('playListPlay')).forEach((e) =>{
     e.addEventListener('click',(el) =>{
-        let index = el.target.id;
+         index = el.target.id;
        // console.log(index);
         music.src = `song/${index}.m4a`;
         download_music.href = `song/${index}.m4a`;
@@ -228,7 +228,7 @@ seek.addEventListener('change', () =>{
 let vol_icon = document.getElementById('vol_icon');
 let vol = document.getElementById('vol');
 let vol_bar = document.getElementsByClassName('vol_bar')[0];
-let vol_dot = document.getElementById('vol-dot');
+let vol_dot = document.getElementById('vol_dot');
 
 vol.addEventListener('change',() =>{
     if(vol.value == 0){
