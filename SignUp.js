@@ -1,7 +1,6 @@
 function Data() {
     // Get the values of all fields
     let firstName = document.getElementById("First").value;
-    let lastName = document.getElementById("Last").value;
     let number = document.getElementById("number").value;
     let email = document.getElementById("email").value;
     let password = document.getElementById("PassWord").value;

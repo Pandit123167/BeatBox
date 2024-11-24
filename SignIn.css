@@ -12,8 +12,8 @@ body{
 
 .photo{
     background-image: url("song.png");
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    /* height: 100%; */
     color: antiquewhite;
     overflow: hidden;
     flex-wrap: nowrap;
@@ -25,32 +25,34 @@ body{
     }
 }
 .sign{
-    margin-left: 5rem;
+    margin-left: 2rem;
     overflow: hidden;
     flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
 }
 
 .heading{
     color: skyblue;
 }
 #email{
-    width: 100vh;
-    border-radius: 0.4rem;
+    width: 80%;
+    border-radius: 0.6rem;
     height:2rem ;
 }
 
 #password{
-    width: 100vh;
-    border-radius: 0.4rem;
+    width: 80%;
+    border-radius: 0.6rem;
     height:2rem;
 
 }
 
 .btn{
     background-color: skyblue;
-    width: 100vh;
+    width: 80%;
     align-items: center;
-    border-radius: 0.4rem;
+    border-radius: 0.6rem;
     height:2rem ;
     cursor: pointer;
 }
@@ -61,7 +63,9 @@ body{
 .or{
     text-align: center;
 }
-
+.google{
+    margin-bottom: 1rem;
+}
 .chanel{
     display: flex;
     justify-content: space-between;
@@ -69,11 +73,12 @@ body{
 }
 .butn{
     background-color: white;
-    height: 2.5rem;
+    height: 2rem;
     width: 15rem;
     border-radius: 1rem;
-    text-decoration: none;
+    margin-right: 1rem;
 }
+
 .butn:hover{
     cursor: pointer;
 }

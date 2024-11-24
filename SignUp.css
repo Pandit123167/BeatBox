@@ -12,10 +12,12 @@ body{
     color: skyblue;
 }
 
+.signup{
+    width: 100%;
+}
 .photo{
     background-image: url("song.png");
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
 }
 .h20{
     color: white;
@@ -31,57 +33,31 @@ body{
 }
 
 .signup{
-    margin-left: 5rem;
-}
-
-
-.name{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.7rem;
+    margin-left: 3rem;
 }
 
 #First{
-    width:100%;
+    width:80%;
     height: 1.5rem;
-    border-radius: 0.4rem;
+    border-radius: 0.5rem;
+    /* margin-right: 1rem; */
 }
 
-#Last{
-    width:100%;
-    height: 1.5rem;
-    border-radius: 0.4rem;
-}
-.mobile{
-    margin-bottom: 0.7rem;
-}
 #number{
-    width:100%;
+    width:80%;
     height: 1.5rem;
-    border-radius: 0.4rem;
+    border-radius: 0.5rem;
 }
 
-.email{
-    margin-bottom: 0.7rem;
-}
-#email{
-    width:100%;
+#gmail{
+    width:80%;
     height: 1.5rem;
-    border-radius: 0.4rem;
-}
-.password{
-    margin-bottom: 0.7rem;
+    border-radius: 0.5rem;
 }
 #PassWord{
-    width: 100%;
+    width: 80%;
     height: 1.5rem;
-    border-radius: 0.4rem;
-}
-
-#ConfirmPassword{
-    width: 100%;
-    height: 1.5rem;
-    border-radius: 0.4rem;
+    border-radius: 0.5rem;
 }
 
 .checkbox{
@@ -90,9 +66,9 @@ body{
 
 .btn{
     background-color: skyblue;
-    width: 100vh;
+    width: 80%;
     align-items: center;
-    border-radius: 0.4rem;
+    border-radius: 0.5rem;
     height:1.5rem ;
     cursor: pointer;
 }
@@ -102,6 +78,10 @@ body{
 
 .or{
     text-align: center;
+}
+
+.google{
+    margin-bottom: 1rem;
 }
 
 .chanel{
@@ -114,6 +94,7 @@ body{
     height: 2rem;
     width: 15rem;
     border-radius: 1rem;
+    margin-right: 1rem;
 }
 .butn:hover{
     cursor: pointer;
