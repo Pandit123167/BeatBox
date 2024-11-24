@@ -16,6 +16,7 @@ body{
     height: 100vh;
     color: antiquewhite;
     overflow: hidden;
+    flex-wrap: nowrap;
 
 }
 @media(max-width:745px) {
