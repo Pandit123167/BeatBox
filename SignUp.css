@@ -1,12 +1,11 @@
 body{
-    width: 100%;
-    height: 100%;
     font-family: "Montserrat", sans-serif;
     overflow:hidden;
 }
 .main{
     display: flex;
     background-color:antiquewhite;
+    
 }
 .signuph{
     color: skyblue;
@@ -14,10 +13,13 @@ body{
 
 .signup{
     width: 100%;
+    height: 100%;
+    
 }
 .photo{
-    background-image: url("song.png");
+    /* background-image: url("song.png"); */
     width: 100%;
+    height: 100%;
 }
 .h20{
     color: white;
@@ -81,7 +83,7 @@ body{
 }
 
 .google{
-    margin-bottom: 1rem;
+    margin-bottom: 0.2rem;
 }
 
 .chanel{
