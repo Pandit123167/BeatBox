@@ -185,15 +185,20 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e) =>{
     })
 });
 
+let music_curr = music.currentTime;
 let currentStart = document.getElementById('currentStart');
 let currentEnd = document.getElementById('currentEnd');
 let seek = document.getElementById('seek');
 let bar2 = document.getElementById('bar2');
 let dot = document.getElementsByClassName('dot')[0];
 
+
 music.addEventListener('timeupdate', () =>{
-    let music_curr = music.currentTime;
+    music_curr = music.currentTime;
     let music_dur = music.duration;
+    
+    // console.log(music_curr);
+    // console.log(currentEnd);
 
 
     let min1 = Math.floor(music_dur / 60);
@@ -204,7 +209,6 @@ music.addEventListener('timeupdate', () =>{
     }
 
     currentEnd.innerText = `${min1}:${sec1}`;
-
 
     let min2 = Math.floor(music_curr / 60);
     let sec2 = Math.floor(music_curr % 60);
@@ -221,9 +225,43 @@ music.addEventListener('timeupdate', () =>{
     dot.style.left = `${seekbar}%`;
 });
 
+music.addEventListener('ended', () => {
+    index++; // Increment the index to go to the next song
+    if (index > songs.length) { // If the index exceeds the number of songs, reset to the first song
+        index = 1;
+    }
+
+    // Update music source and other elements
+    music.src = `song/${index}.m4a`;
+    music.play();
+
+    // Update song title and poster
+    let songTitles = songs.filter((els) => els.id == index);
+    songTitles.forEach(elss => {
+        let { songName, poster } = elss;
+        title.innerHTML = songName;
+        poster_master_play.src = poster;
+        download_music.href = `song/${index}.m4a`;
+        download_music.setAttribute('download', songName);
+    });
+
+    // Update UI elements
+    makeAllBackground();
+    Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background = "rgb(105, 105, 105, .1)";
+    makeAllplays();
+    Array.from(document.getElementsByClassName('playListPlay'))[index - 1].classList.remove('bi-play-circle-fill');
+    Array.from(document.getElementsByClassName('playListPlay'))[index - 1].classList.add('bi-pause-circle-fill');
+    wave.classList.add('active1');
+});
+
+
 seek.addEventListener('change', () =>{
     music.currentTime = seek.value * music.duration / 100;
 });
+
+
+
+
 
 let vol_icon = document.getElementById('vol_icon');
 let vol = document.getElementById('vol');
