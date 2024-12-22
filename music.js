@@ -254,6 +254,33 @@ music.addEventListener('ended', () => {
     wave.classList.add('active1');
 });
 
+//Search
+
+document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.querySelector(".search input");
+    const songItems = document.querySelectorAll(".songItem");
+    
+    // Function to search songs
+    searchInput.addEventListener("input", function() {
+        const query = searchInput.value.toLowerCase();
+        
+        songItems.forEach(function(songItem) {
+            const title = songItem.querySelector("h5").textContent.toLowerCase();
+            const subtitle = songItem.querySelector(".subtitle").textContent.toLowerCase();
+
+            // Check if the search query matches title or subtitle
+            if (title.includes(query) || subtitle.includes(query)) {
+                songItem.style.display = "block";  // Show matching song item
+            } 
+            else {
+                songItem.style.display = "none";   // Hide non-matching song item
+            }
+        });
+    });
+});
+
+
+
 
 seek.addEventListener('change', () =>{
     music.currentTime = seek.value * music.duration / 100;
