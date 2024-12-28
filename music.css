@@ -699,3 +699,16 @@ header .song_bar .popular_artists .item li img{
     height: 100%;
     border-radius: 50%;
 }
+
+
+
+/* Radio */
+
+.RADIO{
+    color: #fff;
+    opacity: 0.2;
+    transition: 1s;
+}
+.RADIO:hover{
+    opacity: 1;
+}
